@@ -14,6 +14,7 @@ public class Categoria
     // [MaxLength(1000)]
     public string Descripcion {get;set;}
 
+    public int Peso {get;set;}
 
     public virtual ICollection<Tarea> Tareas {get;set;}
 

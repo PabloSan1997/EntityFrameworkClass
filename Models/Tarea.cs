@@ -5,17 +5,17 @@ namespace projectoef.Models;
 
 public class Tarea
 {
-    [Key]
+    // [Key]
     public Guid TareaId { get; set; }
 
-    [ForeignKey("CategoriaId")]
+    // [ForeignKey("CategoriaId")]
     public Guid CategoriaId { get; set; }
 
-    [Required]
-    [MaxLength(150)]
+    // [Required]
+    // [MaxLength(150)]
     public string Titulo { get; set;}
 
-    [MaxLength(1000)]
+    // [MaxLength(1000)]
     public string Descripcion {get;set;}
 
     public Prioridad PrioridadTarea {get;set;}
